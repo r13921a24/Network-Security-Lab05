@@ -1,0 +1,12 @@
+{
+  "name": "midterm-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "doraeric",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd backend && yarn start",
+    "build": "cd frontend && yarn build",
+    "heroku-prebuild": "npm install -g yarn && cd frontend && yarn install --production=false && cd ../backend && yarn"
+  }
+}
