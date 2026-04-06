@@ -6,6 +6,7 @@ const services = {};
 
 const instance = axios.create({
   baseURL: "/api/v1",
+  withCredentials: true,
 });
 
 services.auth = makeAuth(instance);

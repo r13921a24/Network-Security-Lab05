@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import services from "../services";
 
 function Signup() {
   const navigate = useNavigate();
   const [form, setForm] = useState({ username: "", password: "" });
+
+  useEffect(() => {
+    services.auth.getCsrf();
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();

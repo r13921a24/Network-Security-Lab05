@@ -6,12 +6,12 @@ if (!DATABASE_URL) {
 }
 
 const sequelize = new Sequelize(DATABASE_URL, {
-  dialectOptions: {
+  /*dialectOptions: {
     ssl: {
       require: true,
       rejectUnauthorized: false, // YOU NEED THIS
     },
-  },
+  },*/
 });
 
 export class User extends Model {}
