@@ -1,6 +1,6 @@
 import express from "express";
 import csrf from "csurf";
-import { setupUserController } from "../controllers";
+import { setupUserController } from "../controllers/index.js";
 
 const csrfProtection = csrf();
 

@@ -2,7 +2,7 @@ import express from "express";
 import session from "express-session";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
-import { apiRouter } from "./routes";
+import { apiRouter } from "./routes/index.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const port = process.env.PORT || 8000;
 const { SESSION_SECRET } = process.env;

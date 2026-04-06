@@ -1,4 +1,4 @@
-import { User } from "../models";
+import { User } from "../models/index.js";
 
 /** @param {import('express').Router} r */
 export const setupUserController = (r) => {
