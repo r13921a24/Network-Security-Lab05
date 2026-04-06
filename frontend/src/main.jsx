@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom"; // 不要使用 react-dom/client
 import { HashRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
