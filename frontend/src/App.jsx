@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import services from "./services";
 import Home from "./components/Home";
+import About from "./components/About";
+import Signup from "./components/Signup";
 
 function App() {
   useEffect(() => {
@@ -17,7 +19,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/users" element={<Users />} />
         <Route path="*" element={<div>React Router Not Implement</div>} />
       </Routes>
